@@ -5,6 +5,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Hero from './components/hero';
 import Navbar from './components/Navbar';
 import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
 
 import './App.css'
 
@@ -13,7 +15,7 @@ function App() {
     // 1. Initialize Lenis with custom settings for scroll speed
     const lenis = new Lenis({
       duration: 1.2, // Affects the animation duration
-      lerp: 0.07, // Lower values (e.g., 0.05) are smoother and "floatier". Higher values (e.g., 0.2) are more responsive.
+      lerp: 0.05, // Lower values (e.g., 0.05) are smoother and "floatier". Higher values (e.g., 0.2) are more responsive.
       smoothWheel: true,
     });
 
@@ -41,6 +43,8 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Skills />
+        <Projects />
       </main>
     </>
   )
