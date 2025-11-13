@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="relative z-20 flex items-center justify-center w-full h-full p-8 text-center bg-black/20 pointer-events-none sm:p-16 md:p-24">
         <div className="max-w-md pointer-events-auto">
           <h1 className="font-pixel text-5xl font-bold text-white whitespace-nowrap md:text-7xl lg:text-8xl [text-shadow:_0_3px_5px_rgb(0_0_0_/_40%)]">
-            <SparklesText>Hello, I'm</SparklesText>
+            <SparklesText>Hello👋, I'm</SparklesText>
           </h1>
           
           {/* Rotating Text for Skills */}
@@ -39,14 +39,24 @@ export default function Hero() {
             />
           </div>
         
-          {/* Call-to-action button */}
-          <a
-            href="#projects"
-            className="inline-flex items-center gap-2 px-6 py-3 mt-8 text-base font-semibold text-black transition-all duration-300 bg-white rounded-lg shadow-lg pointer-events-auto hover:bg-gray-200 hover:scale-105"
-          >
-            View My Work
-            <ArrowRight size={20} />
-          </a>
+          {/* Call-to-action buttons */}
+          <div className="flex justify-center gap-4 mt-8">
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 px-6 py-3 text-base font-semibold text-black transition-all duration-300 bg-white rounded-lg shadow-lg pointer-events-auto hover:bg-gray-200 hover:scale-105"
+            >
+              View My Work
+              <ArrowRight size={20} />
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1gJ-DtvwfuRCpGAgS6kF21VzBI1DwiCvd/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 text-base font-semibold text-white transition-all duration-300 bg-transparent border border-white rounded-lg shadow-lg pointer-events-auto hover:bg-white hover:text-white hover:scale-105"
+            >
+              View Resume
+            </a>
+          </div>
         </div>
       </div>
     </section>

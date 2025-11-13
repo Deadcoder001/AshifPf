@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { cn } from "@/lib/utils";
+import {GridPattern} from "@/components/ui/grid-pattern";
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -14,11 +16,20 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="contact-bg pt-16 pb-24">
-      <div className="container px-4 mx-auto">
+    <div id="contact" className="relative flex w-full items-center justify-center overflow-hidden bg-background py-16 md:py-24">
+      <GridPattern
+        width={30}
+        height={30}
+        x={-1}
+        y={-1}
+        className={cn(
+          "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]"
+        )}
+      />
+      <div className="relative z-10 container px-4 mx-auto">
         {/* Centered Form */}
         <div className="max-w-md mx-auto px-8 py-6 bg-gray-50 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Contact Us</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Contact Me</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-gray-800 mb-1" htmlFor="name">Your Name</label>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import GlareHover from './GlareHover';
+import { Highlighter } from "@/components/ui/highlighter";
+
 
 // --- 1. Import your project images ---
 
@@ -9,6 +11,8 @@ import project3Img from '../assets/projects/Project3.png';
 import project4Img from '../assets/projects/Project4.png';
 import project5Img from '../assets/projects/project5.png';
 import project6Img from '../assets/projects/project6.png';
+import project7Img from '../assets/projects/project7.png';
+import project8Img from '../assets/projects/project8.png';
 import { Truck } from 'lucide-react';
 
 // --- Data for the projects ---
@@ -21,6 +25,22 @@ const projectData = [
         liveUrl: 'https://sahityaasangamm.in',
         repoUrl: '#',
         tags: ['Blade', 'Laravel', 'MySQL'],
+    },
+    {
+        title: 'Portfolio Website',
+        description: 'My personal portfolio website built with React and Tailwind CSS.',
+        imageUrl: project7Img,
+        liveUrl: '#',
+        repoUrl: '#',
+        tags: ['React', 'Tailwind CSS'],
+    },
+    {
+        title: 'ONS Trading Application',
+        description: 'A real-time trading application using Django and Bootstrap 5.',
+        imageUrl: project5Img,
+        liveUrl: 'https://ons-trading.onrender.com',
+        repoUrl: 'https://github.com/Deadcoder001/ons_trading.git',
+        tags: ['Django', 'yfinance', 'Bootstrap 5'],
     },
     {
         title: 'Tea Country',
@@ -48,21 +68,22 @@ const projectData = [
         repoUrl: '#',
         tags: ['React', 'Vue', 'Tailwind CSS'],
     },
-    {
-        title: 'ONS Trading Application',
-        description: 'A real-time trading application using Django and Bootstrap 5.',
-        imageUrl: project5Img,
-        liveUrl: 'https://ons-trading.onrender.com',
-        repoUrl: 'https://github.com/Deadcoder001/ons_trading.git',
-        tags: ['Django', 'yfinance', 'Bootstrap 5'],
-    },
-    {
+
+        {
         title: 'Jana Kalyan Swastha sewa',
         description: 'A Healthcare website built with HTML and php.',
         imageUrl: project6Img,
         liveUrl: 'https://jkssewa.org',
         repoUrl: '#',
         tags: ['React', 'Express'],
+    },
+    {
+        title: 'Project Management Tool',
+        description: 'A project management tool built with MERN stack.',
+        imageUrl: project8Img,
+        liveUrl: '#',
+        repoUrl: '#',
+        tags: ['MongoDB', 'Express', 'React', 'Node.js'],
     },
 ];
 
@@ -143,7 +164,9 @@ export default function Projects() {
             <div className="relative z-10 px-2">
                 <div className="text-center mb-12">
                     <h2 className="text-5xl font-bold font-pixel underline-wavy-yellow inline-block">
-                        My Projects
+                        <Highlighter action="underline" color="#FFD700">
+                            My Projects 🚀
+                        </Highlighter>
                     </h2>
                 </div>
                 <div className="grid grid-cols-3 gap-6 max-w-screen-lg mx-auto">

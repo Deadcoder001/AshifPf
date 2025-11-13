@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo3.png'; // Make sure this path is correct
 
 /**
  * A minimal, transparent navigation bar.
@@ -10,8 +11,8 @@ export default function Navbar() {
     <header className="absolute top-0 left-0 right-0 z-30 p-4 sm:p-6">
       <nav className="container flex items-center justify-between mx-auto">
         {/* Logo */}
-        <a href="#" className="text-xl font-bold text-white">
-          AE
+        <a href="#">
+          <img src={logo} alt="Logo" className="w-28 h-6" /> {/* Adjust size as needed */}
         </a>
         
         {/* Navigation Links */}
