@@ -9,6 +9,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import SocialMagnet from './components/SocialMagnet';
 import ContactForm from './components/ContactForm';
+import { SmoothCursor } from './components/ui/smooth-cursor';
 
 import './App.css'
 
@@ -41,6 +42,7 @@ function App() {
 
   return (
     <>
+      <SmoothCursor />
       <Navbar />
       <main>
         <Hero />

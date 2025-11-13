@@ -101,3 +101,13 @@
     rgba(0, 0, 0, 0) 70%
   );
 }
+
+* {
+  cursor: none !important;
+}
+
+input,
+textarea,
+select {
+  cursor: text !important;
+}
